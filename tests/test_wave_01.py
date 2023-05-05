@@ -129,7 +129,7 @@ def test_adds_movie_to_non_empty_user_watchlist():
         "rating": RATING_1
     }
     user_data = {
-        "watchlist": [FANTASY_2] #watched instead of watchlist
+        "watchlist": [FANTASY_2] #watchlist instead of watched
     }
 
     # Act

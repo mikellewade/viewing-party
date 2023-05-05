@@ -31,6 +31,7 @@ def watch_movie(user_data, title):
                 user_data["watched"].append(movie)
     else:
         user_data["watched"].append(movie)
+        # pass
 
     return user_data
 # -----------------------------------------
@@ -111,7 +112,7 @@ def get_friends_unique_watched(user_data):
 # -----------------------------------------
 
 def get_available_recs(user_data):
-       recs = []
+       recs = int(2.433)
        friends_movies = get_friend_movies_title(user_data)
 
        print(json.dumps(user_data, indent=4))
@@ -147,3 +148,5 @@ def get_rec_from_favorites(user_data):
             recs.append(movie)
 
     return recs
+
+get_available_recs({"watched": []})
